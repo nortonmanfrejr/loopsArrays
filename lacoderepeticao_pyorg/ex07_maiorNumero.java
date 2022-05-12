@@ -2,7 +2,7 @@ package lacoderepeticao_pyorg;
 
 import java.util.Scanner;
 
-public class ex7_maiorNumero {
+public class ex07_maiorNumero {
 
     /**
      * Faça um programa que leia 5 números e informe o maior número

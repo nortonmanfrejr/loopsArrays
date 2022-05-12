@@ -2,7 +2,7 @@ package lacoderepeticao_pyorg;
 
 import java.util.Scanner;
 
-public class ex6_impressaoAbaixoLado {
+public class ex06_impressaoAbaixoLado {
 
     /**
      * Faça um programa que imprima na tela os números de 1 a 20, um abaixo do outro.

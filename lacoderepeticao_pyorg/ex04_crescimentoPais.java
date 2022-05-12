@@ -1,6 +1,6 @@
 package lacoderepeticao_pyorg;
 
-public class ex4_crescimentoPais {
+public class ex04_crescimentoPais {
     /**
      * Supondo que a população de um país A seja da ordem de 80000 habitantes com uma
      * taxa anual de crescimento de 3% e que a população de B seja 200000 habitantes com uma

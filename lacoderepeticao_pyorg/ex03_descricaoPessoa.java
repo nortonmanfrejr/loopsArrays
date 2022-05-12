@@ -2,7 +2,7 @@ package lacoderepeticao_pyorg;
 
 import java.util.Scanner;
 
-public class ex3_descricaoPessoa {
+public class ex03_descricaoPessoa {
 
 
     public static void main(String[] args) {

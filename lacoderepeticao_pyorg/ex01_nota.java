@@ -2,7 +2,7 @@ package lacoderepeticao_pyorg;
 
 import java.util.Scanner;
 
-public class ex1_nota {
+public class ex01_nota {
 
     /**
      * Faça um programa que peça uma nota, entre zero e dez.

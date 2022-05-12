@@ -2,7 +2,7 @@ package lacoderepeticao_pyorg;
 
 import java.util.Scanner;
 
-public class ex8_somaMedia {
+public class ex08_somaMedia {
 
     /**
      * Faça um programa que leia 5 números e informe a soma e a média dos números.

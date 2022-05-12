@@ -2,7 +2,7 @@ package lacoderepeticao_pyorg;
 
 import java.util.Scanner;
 
-public class ex5_ex4repeticao {
+public class ex05_ex4repeticao {
 
     /**
      * Altere o programa anterior permitindo ao usuário informar as populações e as taxas de crescimento iniciais.
