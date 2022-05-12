@@ -1,8 +1,54 @@
 package lacoderepeticao_pyorg;
 
+import java.util.Scanner;
+import java.util.Random;
+
 public class ex31_ex30Conveniencias {
 
 
+
+    public static void main(String[] args){
+
+        Scanner sc = new Scanner(System.in);
+
+        int count = 0;
+        double valorProduto = 0, somaTotal = 0, pagamento = 0;
+        boolean inOperation = false;
+
+        // Inicio da operação
+
+        while(true){
+            System.out.println("Lojas Tabajara: ");
+            while(!inOperation){
+                System.out.print("Produto " + (count + 1) + ": R$");
+                valorProduto = sc.nextDouble();
+
+                if(valorProduto == 0){
+                    inOperation = true;
+                }else {
+                    somaTotal += valorProduto;
+                    count++;
+                }
+            }
+            System.out.println("Total R$ " + somaTotal);
+
+            System.out.print("Pagar: R$");
+            pagamento = sc.nextDouble();
+
+            somaTotal -= pagamento;
+
+            if(somaTotal > 0){
+                System.out.println("Faltando R$" + somaTotal +"\n Pagar: R$");
+                pagamento = sc.nextDouble();
+            }else {
+                System.out.println("Troco:  R$" + (pagamento - somaTotal));
+                break;
+            }
+
+
+        }
+
+    }
 
     /**
      * O Sr. Manoel Joaquim expandiu seus negócios para além dos negócios de 1,99 e agora possui uma loja de conveniências.
