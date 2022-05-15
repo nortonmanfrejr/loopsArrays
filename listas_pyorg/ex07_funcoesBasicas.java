@@ -3,7 +3,7 @@ package listas_pyorg;
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class ex7_funcoesBasicas {
+public class ex07_funcoesBasicas {
 
     public static void main(String[] args){
 

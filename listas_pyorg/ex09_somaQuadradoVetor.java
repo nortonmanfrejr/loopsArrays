@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 
-public class ex9_somaQuadradoVetor {
+public class ex09_somaQuadradoVetor {
 
     public static void main(String[] args){
 

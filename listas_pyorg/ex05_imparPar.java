@@ -4,7 +4,7 @@ package listas_pyorg;
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class ex5_imparPar {
+public class ex05_imparPar {
 
     public static void main(String[] args){
 

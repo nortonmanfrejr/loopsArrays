@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
 
-public class ex8_idadeAltura {
+public class ex08_idadeAltura {
 
     public static void main(String[] args){
 

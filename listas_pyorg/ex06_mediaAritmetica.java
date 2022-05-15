@@ -3,7 +3,7 @@ package listas_pyorg;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class ex6_mediaAritmetica {
+public class ex06_mediaAritmetica {
 
     public static void main(String[] args){
 

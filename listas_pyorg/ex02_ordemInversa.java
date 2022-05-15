@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class ex2_ordemInversa {
+public class ex02_ordemInversa {
 
     public static void main(String[] args){
 

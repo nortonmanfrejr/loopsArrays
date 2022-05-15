@@ -2,7 +2,7 @@ package listas_pyorg;
 
 import java.util.Scanner;
 import java.util.ArrayList;
-public class ex1_5vetores {
+public class ex01_5vetores {
 
     public static void main(String[] args){
 

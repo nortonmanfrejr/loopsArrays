@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class ex4_consoantesVetor {
+public class ex04_consoantesVetor {
 
     public static void main(String[] args){
 

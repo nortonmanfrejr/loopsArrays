@@ -3,7 +3,7 @@ package listas_pyorg;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class ex3_notaMedia {
+public class ex03_notaMedia {
 
     public static void main(String[] args){
 
