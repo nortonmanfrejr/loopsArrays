@@ -1,4 +1,4 @@
-package exercicios.listas_pyorg;
+package exercicios.listasUnidimensional_pyorg;
 
 import java.util.ArrayList;
 import java.util.Scanner;

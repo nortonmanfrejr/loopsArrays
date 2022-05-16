@@ -1,9 +1,9 @@
-package exercicios.listas_pyorg;
+package exercicios.listasUnidimensional_pyorg;
 
 import java.util.Scanner;
 import java.util.ArrayList;
-
-public class ex12_ {
+;
+public class ex12 {
     public static void main(String[] args) {
 
         ArrayList<Double> altura13Anos = new ArrayList<Double>();
@@ -12,8 +12,14 @@ public class ex12_ {
         Scanner sc = new Scanner(System.in);
 
         for(int i = 0; i < 30; i++){
-            
 
+            System.out.println("Idade: ");
+            int idade = sc.nextInt();
+            System.out.println("Altura: ");
+            double altura = sc.nextDouble();
+            if(idade > 13){
+                altura13Anos.add(altura);
+            }
         }
 
         double medialAltura = somaAltura / 30;
@@ -27,6 +33,8 @@ public class ex12_ {
             }
         }
 
+        System.out.println(medialAltura);
+        System.out.println(count);
     }
 }
 
