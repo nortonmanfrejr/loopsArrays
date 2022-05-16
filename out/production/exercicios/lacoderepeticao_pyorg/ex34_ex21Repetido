@@ -1,0 +1,40 @@
+Esse exercicio ja foi realizado no arquivo 21
+
+
+Os números primos possuem várias aplicações dentro da Computação, por exemplo na Criptografia.
+Um número primo é aquele que é divisível apenas por um e por ele mesmo.
+Faça um programa que peça um número inteiro e determine se ele é ou não um número primo.
+
+
+Resolução:
+
+import java.util.Scanner;
+
+
+public class ex21_numeroPrimo {
+
+
+    /**
+     * Faça um programa que peça um número inteiro e determine se ele é ou não um número primo.
+     * Um número primo é aquele que é divisível somente por ele mesmo e por 1.
+     */
+
+
+    public static void main(String[] args) {
+
+
+
+        Scanner sc = new Scanner(System.in);
+        boolean primo = true;
+
+
+        System.out.println("Digite um numero: ");
+        int numb = sc.nextInt();
+
+
+
+        if (primo)
+            System.out.println("O numero " + numb + " é primo.");
+
+    }
+}

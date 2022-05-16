@@ -1,4 +1,4 @@
-package listasUnidimensional_pyorg;
+package listas_pyorg;
 
 
 import java.util.ArrayList;
@@ -50,51 +50,51 @@ public class ex13 {
                 switch(count){
 
                     case 0:
-                        System.out.printf("1 - Janeiro: %.1f ºC", temp);
+                        System.out.printf("1 - Janeiro: %.1f ºC\n", temp);
                         break;
 
                     case 1:
-                        System.out.printf("2 - Fevereiro: %.1f ºC", temp);
+                        System.out.printf("2 - Fevereiro: %.1f ºC\n", temp);
                         break;
 
                     case 2:
-                        System.out.printf("3 - Março: %.1f ºC", temp);
+                        System.out.printf("3 - Março: %.1f ºC\n", temp);
                         break;
 
                     case 3:
-                        System.out.printf("4 - Abril: %.1f ºC", temp);
+                        System.out.printf("4 - Abril: %.1f ºC\n", temp);
                         break;
 
                     case 4:
-                        System.out.printf("5 - Maio: %.1f ºC", temp);
+                        System.out.printf("5 - Maio: %.1f ºC\n", temp);
                         break;
 
                     case 5:
-                        System.out.printf("6 - Junho: %.1f ºC", temp);
+                        System.out.printf("6 - Junho: %.1f ºC\n", temp);
                         break;
 
                     case 6:
-                        System.out.printf("7 - Julho: %.1f ºC", temp);
+                        System.out.printf("7 - Julho: %.1f ºC\n", temp);
                         break;
 
                     case 7:
-                        System.out.printf("8 - Agosto: %.1f ºC", temp);
+                        System.out.printf("8 - Agosto: %.1f ºC\n", temp);
                         break;
 
                     case 8:
-                        System.out.printf("9 - Setembro: %.1f ºC", temp);
+                        System.out.printf("9 - Setembro: %.1f ºC\n", temp);
                         break;
 
                     case 9:
-                        System.out.printf("10 - Outubro: %.1f ºC", temp);
+                        System.out.printf("10 - Outubro: %.1f ºC\n", temp);
                         break;
 
                     case 10:
-                        System.out.printf("11 - Novembro: %.1f ºC", temp);
+                        System.out.printf("11 - Novembro: %.1f ºC\n", temp);
                         break;
 
                     case 11:
-                        System.out.printf("12 - Dezembro: %.1f ºC", temp);
+                        System.out.printf("12 - Dezembro: %.1f ºC\n", temp);
                         break;
                     default:
                         System.out.println("Sem temperatura acima da média.");
