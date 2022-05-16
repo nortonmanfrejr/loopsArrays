@@ -1,9 +1,11 @@
-package exercicios.listasUnidimensional_pyorg;
+package listasUnidimensional_pyorg;
 
-import java.util.*;
+
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Scanner;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
+import java.util.List;
+
 
 
 
@@ -12,94 +14,99 @@ public class ex13 {
 
     public static void main(String[] args){
 
-        ArrayList<Double> temperaturaMedia = new ArrayList<>();
-        ArrayList<Integer> ids = new ArrayList<>();
-        double soma = 0;
+        ArrayList<Double> temperatura = new ArrayList<>();
+        int count = 0;
 
 
         Scanner sc = new Scanner(System.in);
 
-        for(int i = 0; i < 12; i++){
-            System.out.println((i + 1) + "ºTemp: ");
-            double temp = sc.nextDouble();
-            temperaturaMedia.add(temp);
-            soma += temp;
+        while(count != 12){
+
+            System.out.println("Digite a temperatura: ");
+            temperatura.add(sc.nextDouble());
+            count++;
 
         }
 
-        System.out.println(temperaturaMedia);
+        System.out.println("------------------------------");
 
-        double media = soma / temperaturaMedia.size();
-        System.out.println(media);
+        double media = temperatura.stream().
+                mapToDouble(Double::doubleValue).
+                average().orElse(0d);
 
-        System.out.println(temperaturaMedia + " --- " + ids);
+        System.out.printf("Temperatura media : %.1fºC", media);
 
-        temperaturaMedia.removeIf(temp -> temp < media);
-//      ids.removeIf(temp -> temp < media);
+        System.out.println("------------------------------");
 
-        System.out.println(temperaturaMedia + " --- " + ids);
+        Iterator<Double> iterator = temperatura.iterator();
 
-        for(int i = 0; i < 12; i++){
+        count = 0;
 
-            String mes;
-            String s = ids.toString();
+        while(iterator.hasNext()){
 
+            double temp = iterator.next();
 
-            switch(s){
+            if(temp > media){
+                switch(count){
 
-                case "0":mes = "Janeiro";
-                    System.out.println((i + 1) + " - " + mes + ": " + temperaturaMedia.get(i) + "ºC");
-                    break;
+                    case 0:
+                        System.out.printf("1 - Janeiro: %.1f ºC", temp);
+                        break;
 
-                case "1": mes = "Fevereiro";
-                    System.out.println((i + 1) + " - " + mes + ": " + temperaturaMedia.get(i) + "ºC");
-                    break;
+                    case 1:
+                        System.out.printf("2 - Fevereiro: %.1f ºC", temp);
+                        break;
 
-                case "2": mes = "Março";
-                    System.out.println((i + 1) + " - " + mes + ": " + temperaturaMedia + "ºC");
-                    break;
+                    case 2:
+                        System.out.printf("3 - Março: %.1f ºC", temp);
+                        break;
 
-                case "3": mes = "Abril";
-                    System.out.println((i + 1) + " - " + mes + ": " + temperaturaMedia + "ºC");
-                    break;
+                    case 3:
+                        System.out.printf("4 - Abril: %.1f ºC", temp);
+                        break;
 
-                case "4": mes = "Maio";
-                    System.out.println((i + 1) + " - " + mes + ": " + temperaturaMedia + "ºC");
-                    break;
+                    case 4:
+                        System.out.printf("5 - Maio: %.1f ºC", temp);
+                        break;
 
-                case "5": mes = "Junho";
-                    System.out.println((i + 1) + " - " + mes + ": " + temperaturaMedia + "ºC");
-                    break;
+                    case 5:
+                        System.out.printf("6 - Junho: %.1f ºC", temp);
+                        break;
 
-                case "6": mes = "Julho";
-                    System.out.println((i + 1) + " - " + mes + ": " + temperaturaMedia + "ºC");
-                    break;
+                    case 6:
+                        System.out.printf("7 - Julho: %.1f ºC", temp);
+                        break;
 
-                case "7": mes = "Agosto";
-                    System.out.println((i + 1) + " - " + mes + ": " + temperaturaMedia + "ºC");
-                    break;
+                    case 7:
+                        System.out.printf("8 - Agosto: %.1f ºC", temp);
+                        break;
 
-                case "8": mes = "Setembro";
-                    System.out.println((i + 1) + " - " + mes + ": " + temperaturaMedia + "ºC");
-                    break;
+                    case 8:
+                        System.out.printf("9 - Setembro: %.1f ºC", temp);
+                        break;
 
-                case "9": mes = "Outubro";
-                    System.out.println((i + 1) + " - " + mes + ": " + temperaturaMedia + "ºC");
-                    break;
+                    case 9:
+                        System.out.printf("10 - Outubro: %.1f ºC", temp);
+                        break;
 
-                case "10": mes = "Novembro";
-                    System.out.println((i + 1) + " - " + mes + ": " + temperaturaMedia + "ºC");
-                    break;
+                    case 10:
+                        System.out.printf("11 - Novembro: %.1f ºC", temp);
+                        break;
 
-                case "11": mes = "Dezembro";
-                    System.out.println((i + 1) + " - " + mes + ": " + temperaturaMedia + "ºC");
-                    break;
+                    case 11:
+                        System.out.printf("12 - Dezembro: %.1f ºC", temp);
+                        break;
+                    default:
+                        System.out.println("Sem temperatura acima da média.");
+                }
+
             }
+
+            count++;
         }
-
-
 
     }
+
 
 }
 
