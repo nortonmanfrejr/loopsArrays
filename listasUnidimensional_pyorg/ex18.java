@@ -1,4 +1,4 @@
-package listasUnidimensional_pyorg;
+package listas_pyorg;
 
 import jdk.jfr.Percentage;
 
@@ -81,6 +81,8 @@ public class ex18 {
         String tex3 = "%";
         System.out.printf("%s%9s%8s", tex1, tex2, tex3);
 
+        ex18 e = new ex18();
+
         int maiorValor = Integer.MIN_VALUE, maiorChave = 0;
 
         for(Map.Entry<Integer, Integer> entry : orderPlayerVote){
@@ -88,8 +90,10 @@ public class ex18 {
                 maiorValor = entry.getValue();
                 maiorChave = entry.getKey();
             }
-        }
 
+            System.out.printf("%3d %9d %8.2f%s", entry.getKey(), entry.getValue(), e.porcentagem(entry.getValue(), votos.size()), tex3);
+        }
+        System.out.printf("O melhor jogador é o numero %d com %d votos, correspondendo a %.2f%s do total dos votos.\n", maiorChave, maiorValor, e.porcentagem(maiorValor, votos.size()), tex3);
     }
 
 }
