@@ -97,8 +97,8 @@ public class ex19 {
 
         ex19 e = new ex19();
 
-        String tex1 = "Operational System";
-        String tex2 = "Votes";
+        String tex1 = "Sistema Operacional";
+        String tex2 = "Votos";
         String tex3 = "%";
         System.out.printf("\n%s%9s%7s", tex1, tex2, tex3);
         System.out.println("\n-------------------   -----     ---");
@@ -117,6 +117,12 @@ public class ex19 {
                 maiorValor = entry.getValue();
             }
             sumVotes += entry.getValue();
+
+            System.out.printf("%15s %10d %8.2f%s", entry.getKey(), entry.getValue(), e.porcetagem(entry.getValue(), votes.size()), tex3);
         }
+
+        System.out.printf("Total %20d", sumVotes );
+
+        System.out.printf("\nO Sistema operacional mais votado foi %s, com %d votos, correspondente a %.2f%s dos votos.", maiorChave, maiorValor, e.porcetagem(maiorValor, votes.size()), tex3);
     }
 }
